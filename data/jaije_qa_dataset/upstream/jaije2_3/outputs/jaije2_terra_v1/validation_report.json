@@ -1,0 +1,13 @@
+{
+  "validated_questions": 150,
+  "target_questions": 150,
+  "target_reached": true,
+  "source_rows_text_and_metadata_match": true,
+  "same_section_evidence": true,
+  "unique_ids_and_questions": true,
+  "near_duplicate_threshold": 0.92,
+  "answer_sentences": "1-2",
+  "evidence_rows_per_question": "1-4",
+  "human_review_status": "pending",
+  "ontology_gold_status": "not_annotated"
+}

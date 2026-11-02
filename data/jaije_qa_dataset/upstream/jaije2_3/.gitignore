@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+reproduction/
+outputs/**/generation_log.jsonl
+outputs/**/request_log.jsonl
+outputs/**/source_records.jsonl

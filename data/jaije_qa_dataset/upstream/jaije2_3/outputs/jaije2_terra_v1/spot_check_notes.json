@@ -1,0 +1,17 @@
+{
+  "review_type": "assistant_spot_check_not_expert_approval",
+  "scope": "Selected samples only; this is not a full semantic review of 150 questions.",
+  "dataset_modified": false,
+  "notes": [
+    {
+      "qa_id": "JAIJE2-QA-0001",
+      "status": "needs_context_review",
+      "note": "질문이 '기확보 기술'의 구체적인 사례를 명시하지 않는다. 절감 비용과 기간은 특정 사례의 값이므로 독립적인 질문으로 충분한지 검수해야 한다."
+    },
+    {
+      "qa_id": "JAIJE2-QA-0003",
+      "status": "needs_answer_scope_review",
+      "note": "질문은 '헤드폰이나 헬멧'을 함께 묻지만 선택된 근거는 별도 헤드폰의 불필요성만 명시한다. 헬멧에 대한 답까지 뒷받침하는지 검수하고 필요하면 질문 범위를 헤드폰으로 제한해야 한다."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "questions_checked": 450,
+  "source_checks": [
+    {
+      "source_file": "자이제_1.xlsx",
+      "sheet_name": "clean_sentences",
+      "text_column": "text_for_llm_human",
+      "questions_checked": 150,
+      "source_sha256": "e8c5f174b65eccd7a50dbd2e0e216ea870a6aedfd16b3e4538d6486aea15cf1f",
+      "evidence_and_metadata_match": true
+    },
+    {
+      "source_file": "자이제_2.xlsx",
+      "sheet_name": "종학 파트",
+      "text_column": "사람 검수",
+      "questions_checked": 150,
+      "source_sha256": "60f30063955d807f649b24c86ce0222e1d63bde5f81677c3ce97dfeed2c3689a",
+      "evidence_and_metadata_match": true
+    },
+    {
+      "source_file": "자이제_3.xlsx",
+      "sheet_name": "clean_sentences",
+      "text_column": "사람 검수",
+      "questions_checked": 150,
+      "source_sha256": "000648ed0a4d11f399e1f3d4bbab27d9389f1f20b1de2f4e4536be7906d8b971",
+      "evidence_and_metadata_match": true
+    }
+  ],
+  "combined_csv_jsonl_equivalence": "pass",
+  "semantic_human_review": "pending"
+}

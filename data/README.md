@@ -4,4 +4,4 @@
 
 요청한 원격 기준: https://github.com/ming9oori/AX-seoulfellow/tree/master/jaije_qa_dataset
 
-현재 원격 저장소는 GitHub에서 disabled 응답을 반환하므로 원격 파일을 가져오지 못했습니다. 이 패키지는 로컬 자이제 실험 입력에서 정리한 자료입니다. 원격 복제본 또는 원격과 일치가 검증된 배포본으로 간주하지 않습니다. 출처와 해시는 하위 폴더의 `provenance.json`에 기록했습니다.
+원격 커밋 `21c91eaaa03854fa1b8288279bfb43ee30a8cf04`의 `jaije_qa_dataset/`를 가져와 `jaije_qa_dataset/upstream/`에 보존했습니다. 원격 `final_450`과 로컬 실험 데이터의 450개 질문 ID 및 질문·답변·근거·출처·유형이 모두 일치함을 확인했습니다. 원본과 실험용 split·근거 ID를 정리한 버전을 구분하며, 출처와 해시는 하위 폴더의 `provenance.json`에 기록했습니다.

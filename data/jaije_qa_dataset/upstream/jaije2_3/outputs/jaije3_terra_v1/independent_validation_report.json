@@ -1,0 +1,25 @@
+{
+  "source_file": "자이제_3.xlsx",
+  "sheet_name": "clean_sentences",
+  "text_column": "사람 검수",
+  "questions": 150,
+  "source_cell_and_metadata_check": "pass",
+  "within_dataset_duplicate_check": "pass",
+  "csv_jsonl_equivalence": "pass",
+  "successful_api_chunks": 54,
+  "request_log_entries": 54,
+  "chapters": {
+    "제안서 작성": 82,
+    "제안 프레젠테이션": 68
+  },
+  "sections_covered": 47,
+  "page_range": [
+    322,
+    468
+  ],
+  "answer_semantic_human_review": "pending",
+  "sha256": {
+    "qa_dataset.csv": "9535172b06f9d98ee2b6e40367682404681718169c9e7cf25be1a79b300841eb",
+    "qa_dataset.jsonl": "55a24d1c67f04e097826a96669a356bf776e9fa4e715a04c9d3406763a26e484"
+  }
+}

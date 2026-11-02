@@ -1,0 +1,38 @@
+{
+  "dataset_size": 150,
+  "source_row_count": 1254,
+  "chunk_count": 94,
+  "chapters": {
+    "제안서 작성": 82,
+    "제안 프레젠테이션": 68
+  },
+  "sections_covered": 47,
+  "question_types": {
+    "misconception": 19,
+    "fact": 7,
+    "reason": 33,
+    "method": 38,
+    "numeric": 7,
+    "comparison": 9,
+    "procedure": 20,
+    "definition": 17
+  },
+  "difficulties": {
+    "easy": 61,
+    "medium": 84,
+    "hard": 5
+  },
+  "evidence_modes": {
+    "single_sentence": 63,
+    "multi_sentence": 83,
+    "table": 4
+  },
+  "rejected_reasons": {},
+  "prompt_version": "jaije-qa-v1",
+  "prompt_sha256": "f0c6ec3fe8548aec050a75a0ed27b2a889b36420e3e3dbb444bfb577bc320770",
+  "generated_at": "2026-09-30T05:52:16+00:00",
+  "source_file": "자이제_3.xlsx",
+  "sheet_name": "clean_sentences",
+  "generation_model": "gpt-5.6-terra",
+  "completed_chunks": 54
+}

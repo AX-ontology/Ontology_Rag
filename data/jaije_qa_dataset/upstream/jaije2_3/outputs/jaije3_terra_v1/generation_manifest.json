@@ -1,0 +1,35 @@
+{
+  "fingerprint": "de8390838910d95bc7bd2844412bc3f52b87e90c521cae8cd71abc84a95fbf14",
+  "settings": {
+    "input_path": "/home/minjoo/AX_서울펠로우/AX/자이제_3.xlsx",
+    "input_sha256": "000648ed0a4d11f399e1f3d4bbab27d9389f1f20b1de2f4e4536be7906d8b971",
+    "sheet_name": "clean_sentences",
+    "text_column": "사람 검수",
+    "blank_reviewed_policy": "exclude_without_raw_text_fallback",
+    "id_prefix": "JAIJE3",
+    "model": "gpt-5.6-terra",
+    "target_size": 150,
+    "qas_per_chunk": 3,
+    "max_source_rows": 18,
+    "max_source_chars": 5000,
+    "duplicate_threshold": 0.92,
+    "prompt_version": "jaije-qa-v1",
+    "system_prompt_sha256": "f0c6ec3fe8548aec050a75a0ed27b2a889b36420e3e3dbb444bfb577bc320770",
+    "few_shots_sha256": "502bfbe9a58877b260ac9479d835bad2c5c216e96af90d19d8f4a0282c86ac1d",
+    "few_shot_reference_source_sha256": "e8c5f174b65eccd7a50dbd2e0e216ea870a6aedfd16b3e4538d6486aea15cf1f",
+    "original_generator_sha256": "3994767d6f54aebff1bf964a9a90e9947c4186ea23767f76064f694edbe887b6",
+    "adapter_sha256": "a12ca59f1f92bb0cd0da31bf5cc0e92263c062c14615e8b9a671d526d1bb0bc6",
+    "source_record_count": 1254,
+    "chunk_count": 94,
+    "blank_reviewed_rows_excluded": [],
+    "few_shot_matching_rows_excluded": []
+  },
+  "started_at": "2026-09-30T05:47:50+00:00",
+  "status": "complete",
+  "accepted_count": 150,
+  "updated_at": "2026-09-30T05:52:16+00:00",
+  "output_sha256": {
+    "qa_dataset.csv": "9535172b06f9d98ee2b6e40367682404681718169c9e7cf25be1a79b300841eb",
+    "qa_dataset.jsonl": "55a24d1c67f04e097826a96669a356bf776e9fa4e715a04c9d3406763a26e484"
+  }
+}

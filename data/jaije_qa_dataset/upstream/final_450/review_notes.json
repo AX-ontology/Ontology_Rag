@@ -1,0 +1,19 @@
+{
+  "review_type": "assistant_spot_check_not_expert_approval",
+  "scope": "Inherited Jaije 2 spot checks only; all 450 questions await human semantic review.",
+  "dataset_modified": false,
+  "notes": [
+    {
+      "qa_id": "JAIJE2-QA-0001",
+      "status": "needs_context_review",
+      "note": "질문이 '기확보 기술'의 구체적인 사례를 명시하지 않는다. 절감 비용과 기간은 특정 사례의 값이므로 독립적인 질문으로 충분한지 검수해야 한다."
+    },
+    {
+      "qa_id": "JAIJE2-QA-0003",
+      "status": "needs_answer_scope_review",
+      "note": "질문은 '헤드폰이나 헬멧'을 함께 묻지만 선택된 근거는 별도 헤드폰의 불필요성만 명시한다. 헬멧에 대한 답까지 뒷받침하는지 검수하고 필요하면 질문 범위를 헤드폰으로 제한해야 한다."
+    }
+  ],
+  "source_notes_path": "jaije2_3/outputs/jaije2_terra_v1/spot_check_notes.json",
+  "source_notes_sha256": "71fdeaa4380a4b0616c26488a787a188298cbcd75cbd759f277e637f1f27690f"
+}

@@ -1,7 +1,7 @@
 {
   "source_kind": "local_experiment_export",
   "requested_upstream": "https://github.com/ming9oori/AX-seoulfellow/tree/master/jaije_qa_dataset",
-  "upstream_status": "GitHub reports repository disabled; not fetched; equivalence unverified",
+  "upstream_status": "Fetched and verified: all 450 IDs and selected content fields match local experiment export",
   "source_files": {
     "evaluation_inputs/qa.json": "be15e6e5acb4a14ebb2bf08cd346072dccaafe6fcd81ea5b1430841bee220bdd",
     "evaluation_inputs/gold.json": "c631323fa679591fe43c529c53963b7d58855d999b225795400063d8c2009258",
@@ -19,5 +19,56 @@
     "qa.json": "9825e2cec8f0329153687c3d8b0e1e212456b139bfea985e7bf35a106f55e978",
     "evaluation/gold.json": "c631323fa679591fe43c529c53963b7d58855d999b225795400063d8c2009258",
     "evaluation/split.json": "a4f34e3fa815742ae092d0b5c1e2b92a7978293dd9170948636edae8aa574a5e"
+  },
+  "upstream_commit": "21c91eaaa03854fa1b8288279bfb43ee30a8cf04",
+  "upstream_path": "jaije_qa_dataset",
+  "upstream_verification": {
+    "questions": 450,
+    "ids_match": true,
+    "fields_compared": [
+      "question",
+      "answer",
+      "evidence_text",
+      "source_file",
+      "source_row_ids",
+      "question_type"
+    ],
+    "mismatches": 0
+  },
+  "upstream_files_sha256": {
+    "upstream/.gitignore": "d3467d03f0ceb13ebc345e52c0be0c3f37af63f5a2dea895bdc6e24b0eff5083",
+    "upstream/README.md": "75ebdc994570c527e0163e82b47638cc588bc6c82f880c4163591c12b54ff502",
+    "upstream/qa_dataset.jsonl": "027c0a79aa767ed9163cf5b039b4e562ea604cfd4135097852904983dc4331fe",
+    "upstream/qa_dataset.csv": "5459a61e8d5630fd9eb2e623d86a7e78c620c8255ccfec77de46851d66670716",
+    "upstream/build_final_dataset.py": "ae842424f12691dbe41d99f60950736782dc5ba3995f7f4bb03da0307d39ca9e",
+    "upstream/jaije2_3/generate_qa_dataset.py": "3994767d6f54aebff1bf964a9a90e9947c4186ea23767f76064f694edbe887b6",
+    "upstream/jaije2_3/.gitignore": "530f7c124474fed9ff09c9f18bb48931cb88bbc3f3220fe745d477cc171511f1",
+    "upstream/jaije2_3/generate_document_qa.py": "a12ca59f1f92bb0cd0da31bf5cc0e92263c062c14615e8b9a671d526d1bb0bc6",
+    "upstream/jaije2_3/validate_document_outputs.py": "d6629266a907bcd62c3a27604b3b5cd362fb2f4933fcc5aee69a8330d7370108",
+    "upstream/jaije2_3/requirements.txt": "2e0e85934c8e820aa8e7fa94911bf393efaea848308405c699be1c354a726de7",
+    "upstream/jaije2_3/README.md": "ac90b4b9aaf390a2c60ce7cc7f2c1471690a4f6d98e31d6e819cbeabe7720919",
+    "upstream/final_450/validation_report.json": "a32a0a2a6ceff95340d9a6ab936fcce2be2f1ab57f93e43b0e6714e5c26de7f9",
+    "upstream/final_450/manifest.json": "f7d0cd94249ac2f36c5a9054a32d331250fc8255e2ddc5609b6225c0c8b43ad7",
+    "upstream/final_450/README.md": "b3294cc02ffb6423646a4b6139aeea24e77b8f9ab1c9a558a73657e3328ed34d",
+    "upstream/final_450/source_validation_report.json": "bc6ba4ecb47850f348c0250b2fbaf3409688c26a7cbb7488708d0374d2da3180",
+    "upstream/final_450/qa_dataset.jsonl": "49e8c40bc2f746b394fe41734e6e0fc45de6bd6728fe9beb5401e5d6f2c4698c",
+    "upstream/final_450/review_notes.json": "a7f5ecaa732b1295b00cc2e0cb878a929b538953709bb8a84cbe9316a2732fca",
+    "upstream/final_450/qa_dataset.csv": "cb64f83e353050e5066622b9071cb1190d8c1fbbac68694edfba6becedc08533",
+    "upstream/jaije2_3/prompts/few_shot_examples.json": "502bfbe9a58877b260ac9479d835bad2c5c216e96af90d19d8f4a0282c86ac1d",
+    "upstream/jaije2_3/prompts/system_prompt.txt": "537ce5826c66c4f626167194ee4467a53d444ddfb47e675e4eac6ca40c94b2d4",
+    "upstream/jaije2_3/outputs/jaije2_3_validation_summary.json": "cfd0159b0e9ec2c7ade45df62f62e50c3941ede53a1f28797eac47deb4659580",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/qa_dataset_report.json": "a7fb1888b4f729960cc7ae515f8616c6f0f28f330ccc9cb055874f16fd76ef90",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/validation_report.json": "3b53a14d929252d9feb6b1375d39c379157b0b29ff1917f831513a2d8439f285",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/generation_manifest.json": "319429c9db29acf174f1f14b22ef7dfeead9c558150180edf192044f6ccab236",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/qa_dataset.jsonl": "55a24d1c67f04e097826a96669a356bf776e9fa4e715a04c9d3406763a26e484",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/independent_validation_report.json": "f9f8b801a5bdc74495c5e800d6fddfec08d584086cd997210683f9c4b2a2984f",
+    "upstream/jaije2_3/outputs/jaije3_terra_v1/qa_dataset.csv": "9535172b06f9d98ee2b6e40367682404681718169c9e7cf25be1a79b300841eb",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/qa_dataset_report.json": "e84fe866d825113cd0ff13f02a7d80ba6a99ea99b1da71328b6c80226ab8e0b7",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/validation_report.json": "3b53a14d929252d9feb6b1375d39c379157b0b29ff1917f831513a2d8439f285",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/generation_manifest.json": "9be210e25801794fb148bd6f5140595d8f1ef12239a3a0059f198a73aa52ab60",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/spot_check_notes.json": "71fdeaa4380a4b0616c26488a787a188298cbcd75cbd759f277e637f1f27690f",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/qa_dataset.jsonl": "a67d481394a75fe05f78463da81e96d4e68c521f353a1e73543d0eb9920e46b9",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/independent_validation_report.json": "b361093a80006da0cd8c75c547d3608d5f79594b77b127bb1afef2c25b4c0cfb",
+    "upstream/jaije2_3/outputs/jaije2_terra_v1/qa_dataset.csv": "68496e370d8ca6ebbb6bb2d63b78dade11e060bab05990590b7a36129ecee4bc"
   }
 }

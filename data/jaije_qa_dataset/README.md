@@ -8,6 +8,7 @@
 
 | 파일 | 내용 |
 |---|---|
+| `upstream/` | 지정한 GitHub 저장소의 원본 데이터·생성 코드·프롬프트·검증 기록 스냅샷 |
 | `qa.json` | 450개 질문·참조 답변·출처·근거 ID 및 주석 메타데이터 |
 | `corpus.json` | 원문 ID 순서(`ids`)와 원문 정보(`evidence`), 총 3,995행 |
 | `evaluation/gold.json` | 질문 ID → 정답 근거 원문 ID |
@@ -45,4 +46,8 @@ python data/jaije_qa_dataset/scripts/validate.py
 
 요청된 원격 폴더: https://github.com/ming9oori/AX-seoulfellow/tree/master/jaije_qa_dataset
 
-원격 조회 시 저장소 disabled 응답으로 내용을 가져오지 못했습니다. 현재 파일은 실제 로컬 실험 입력을 정리한 것으로, 원격 버전과의 동일성은 아직 확인되지 않았습니다. 책의 원문과 연구자가 구축한 QA 주석의 출처를 구분하며 이 패키지는 별도의 재이용 라이선스를 부여하지 않습니다.
+원격 커밋 `21c91eaaa03854fa1b8288279bfb43ee30a8cf04`을 가져와 `upstream/`에 보존했습니다. 원격 `final_450/qa_dataset.jsonl`과 실험용 `qa.json`의 450개 ID 및 질문·답변·근거 본문·출처 파일·원문 행 번호·질문 유형이 모두 일치합니다. 원본의 미확정 split과 실험에서 사용하는 dev/test 분할은 구분합니다. 책의 원문과 연구자가 구축한 QA 주석의 출처를 구분하며 이 패키지는 별도의 재이용 라이선스를 부여하지 않습니다.
+
+원본 다운로드: [CSV](upstream/final_450/qa_dataset.csv) · [JSONL](upstream/final_450/qa_dataset.jsonl)
+
+생성 과정: [원본 README](upstream/README.md) · [시스템 프롬프트](upstream/jaije2_3/prompts/system_prompt.txt) · [five-shot 예시](upstream/jaije2_3/prompts/few_shot_examples.json)

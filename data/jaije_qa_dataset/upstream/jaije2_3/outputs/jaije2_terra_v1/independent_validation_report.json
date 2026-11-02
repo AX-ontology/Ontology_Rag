@@ -1,0 +1,26 @@
+{
+  "source_file": "자이제_2.xlsx",
+  "sheet_name": "종학 파트",
+  "text_column": "사람 검수",
+  "questions": 150,
+  "source_cell_and_metadata_check": "pass",
+  "within_dataset_duplicate_check": "pass",
+  "csv_jsonl_equivalence": "pass",
+  "successful_api_chunks": 60,
+  "request_log_entries": 60,
+  "chapters": {
+    "제안서 전략": 19,
+    "제안서 기획": 89,
+    "제안서 작성": 42
+  },
+  "sections_covered": 37,
+  "page_range": [
+    178,
+    317
+  ],
+  "answer_semantic_human_review": "pending",
+  "sha256": {
+    "qa_dataset.csv": "68496e370d8ca6ebbb6bb2d63b78dade11e060bab05990590b7a36129ecee4bc",
+    "qa_dataset.jsonl": "a67d481394a75fe05f78463da81e96d4e68c521f353a1e73543d0eb9920e46b9"
+  }
+}

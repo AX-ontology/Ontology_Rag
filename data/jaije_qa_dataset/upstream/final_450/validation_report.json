@@ -1,0 +1,55 @@
+{
+  "dataset_size": 450,
+  "columns": 39,
+  "source_counts": {
+    "자이제_1.xlsx": 150,
+    "자이제_2.xlsx": 150,
+    "자이제_3.xlsx": 150
+  },
+  "chapter_counts": {
+    "입찰과 제안": 53,
+    "수주영업": 53,
+    "제안서 전략": 63,
+    "제안서 기획": 89,
+    "제안서 작성": 124,
+    "제안 프레젠테이션": 68
+  },
+  "question_types": {
+    "definition": 69,
+    "comparison": 38,
+    "method": 98,
+    "reason": 97,
+    "misconception": 56,
+    "numeric": 20,
+    "fact": 21,
+    "procedure": 51
+  },
+  "difficulties": {
+    "medium": 268,
+    "easy": 168,
+    "hard": 14
+  },
+  "evidence_modes": {
+    "single_sentence": 201,
+    "multi_sentence": 227,
+    "table": 22
+  },
+  "unique_chapter_sections": 133,
+  "unique_source_sheet_sections": 135,
+  "page_range": [
+    19,
+    468
+  ],
+  "review_status": {
+    "pending": 450
+  },
+  "unique_qa_ids": 450,
+  "unique_normalized_questions": 450,
+  "near_duplicate_threshold": 0.92,
+  "near_duplicate_pairs": [],
+  "input_csv_jsonl_equivalence": "pass",
+  "preserved_original_records": true,
+  "inherited_review_note_count": 2,
+  "independent_test_split": false,
+  "graph_gold_annotated": false
+}

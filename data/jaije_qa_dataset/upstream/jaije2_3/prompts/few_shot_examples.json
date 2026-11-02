@@ -1,0 +1,152 @@
+[
+  {
+    "name": "single-row numeric fact",
+    "source_records": [
+      {
+        "source_row_id": 6,
+        "page": 21,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.1.1",
+        "section_title": "제안서를 잘 써야 입찰에 성공한다",
+        "text": "쉬플리의 조사에 따르면 고객의 제안 요청서(RFP: Request for Proposal)상의 요구조건을 100% 충족시킨 제안서라 하더라도 그 성공률은 100%가 아니라 52%라고 한다."
+      }
+    ],
+    "expected": {
+      "question": "RFP 요구조건을 100% 충족한 제안서의 성공률은 얼마인가요?",
+      "answer": "쉬플리 조사에 따르면 RFP 요구조건을 100% 충족한 제안서의 성공률은 52%입니다.",
+      "source_row_ids": [6],
+      "question_type": "numeric",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "name": "multi-row misconception",
+    "source_records": [
+      {
+        "source_row_id": 8,
+        "page": 21,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.1.1",
+        "section_title": "제안서를 잘 써야 입찰에 성공한다",
+        "text": "아래 <그림 1>처럼 제안 요청서상 고객의 공식적인 요구조건은 실제 고객의 요구조건을 100% 모두 다루고 있지 않기 때문이다."
+      },
+      {
+        "source_row_id": 9,
+        "page": 21,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.1.1",
+        "section_title": "제안서를 잘 써야 입찰에 성공한다",
+        "text": "고객의 니즈는 제안 요청서에 공개된 공식적인 요구조건뿐만 아니라 비공식적인 요구조건(Unstated Requirement)까지 포함한다."
+      },
+      {
+        "source_row_id": 14,
+        "page": 21,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.1.1",
+        "section_title": "제안서를 잘 써야 입찰에 성공한다",
+        "text": "제안 요청서에는 없지만 고객이 말해주지 않거나 말할 수 없는 숨겨진 니즈가 반드시 있다."
+      }
+    ],
+    "expected": {
+      "question": "RFP에 적힌 요구조건만 충족하면 고객의 니즈 전체를 반영한 것인가요?",
+      "answer": "아닙니다. 고객의 니즈에는 RFP에 공개된 공식 요구조건뿐 아니라 고객이 말하지 않거나 말할 수 없는 비공식 요구조건도 포함됩니다.",
+      "source_row_ids": [8, 9, 14],
+      "question_type": "misconception",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "name": "multi-page process definition",
+    "source_records": [
+      {
+        "source_row_id": 224,
+        "page": 44,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.3.1",
+        "section_title": "프로세스가 중요하다",
+        "text": "이 과정에서 RFP가 나오면 참여 여부에 대한 최종 의사결정을 해야 하는데 이를 입찰타당성 결정(Bid Validation Decision)이라 부른다."
+      },
+      {
+        "source_row_id": 237,
+        "page": 46,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.3.1",
+        "section_title": "프로세스가 중요하다",
+        "text": "단계 3: 제안서 기획(Proposal Planning) | 주요 활동 | 의사 결정 | 세부 내용 | | --- | --- | --- | | 수주계획을 기반으로 제안서 작성을 위한 계획을 세움. 수주전략을 제안전략으로 구체화하고, 역할과 책임을 정의하고, 주요 리뷰 단계 등 일정과 그라운드 룰 등을 결정함 | 제안 참여 타당성 검증 (Bid Validation Decision) | 제안에서 이길 수 있을 것인가를 최종 검토하고 확인함 |"
+      }
+    ],
+    "expected": {
+      "question": "Bid Validation Decision은 언제 무엇을 확인하는 결정인가요?",
+      "answer": "Bid Validation Decision은 RFP가 나온 뒤 제안에서 이길 수 있는지를 최종 검토하여 참여 타당성을 확인하는 결정입니다.",
+      "source_row_ids": [224, 237],
+      "question_type": "definition",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "name": "comparison",
+    "source_records": [
+      {
+        "source_row_id": 554,
+        "page": 97,
+        "chapter_no": "2",
+        "chapter_title": "수주영업",
+        "section_no": "2.3.3",
+        "section_title": "분석적 평가자와 통합적 평가자는 관점이 다르다",
+        "text": "분석적 평가자는 항목별로 평가한 후 집계하는 반면, 통합적 평가자는 총점(또는 등수)을 먼저 정한 후에 이를 배분한다."
+      },
+      {
+        "source_row_id": 556,
+        "page": 97,
+        "chapter_no": "2",
+        "chapter_title": "수주영업",
+        "section_no": "2.3.3",
+        "section_title": "분석적 평가자와 통합적 평가자는 관점이 다르다",
+        "text": "분석적 평가자는 대체로 엔지니어 출신의 내용 전문가이다."
+      },
+      {
+        "source_row_id": 561,
+        "page": 97,
+        "chapter_no": "2",
+        "chapter_title": "수주영업",
+        "section_no": "2.3.3",
+        "section_title": "분석적 평가자와 통합적 평가자는 관점이 다르다",
+        "text": "한편 통합적 평가자는 조직 내의 행정가(구매조직)나 실제 사용자이다."
+      }
+    ],
+    "expected": {
+      "question": "분석적 평가자와 통합적 평가자는 평가 방식과 배경에서 어떻게 다른가요?",
+      "answer": "분석적 평가자는 항목별 점수를 집계하며 대체로 엔지니어 출신의 내용 전문가입니다. 통합적 평가자는 총점이나 등수를 먼저 정해 점수를 배분하며 주로 행정가나 실제 사용자입니다.",
+      "source_row_ids": [554, 556, 561],
+      "question_type": "comparison",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "name": "misconception correction",
+    "source_records": [
+      {
+        "source_row_id": 145,
+        "page": 35,
+        "chapter_no": "1",
+        "chapter_title": "입찰과 제안",
+        "section_no": "1.2",
+        "section_title": "제안의 오해와 진실",
+        "text": "표 1. 제안에 대한 7가지 오해와 진실 | 오해 | 진실 | | --- | --- | | 제안서는 형식일 뿐 영업이 모든 것을 결정한다. | 수주영업은 개인 대 개인의 관계보다는 조직 차원의 정보 습득과 전략적 제안이 성공의 핵심 요소이다. | | 제안서는 일단 양이 많아야 한다. | 맹목적인 양적 추구는 평가위원의 평가를 어렵게 하여 부정적인 영향을 주는 경우도 있다. | | 추가 제안은 많을수록 좋다. | 추가 제안은 고객의 니즈를 해결한 경우에만 유효하다. | | 우리 업계는 가격이 전부이다. | 가격만이 경쟁요소라면 그 기업은 영업조직이 필요 없고 견적팀만 있으면 된다. | | 제안서는 그래픽 중심으로 작성해야 한다. | 그래픽이 많으면 메시지 전달을 방해하고, 적으면 메시지를 전달하기 어렵다. | | 한국 기업은 해외 사업을 잘하고 있다. | 해외 수주사업에서는 검증되지 않은 영업 및 제안서 작성 프로세스로 낮은 수주율을 기록하고 있다. |"
+      }
+    ],
+    "expected": {
+      "question": "제안서는 분량이 많을수록 좋은가요?",
+      "answer": "아닙니다. 맹목적으로 분량을 늘리면 평가위원의 평가를 어렵게 하여 오히려 부정적인 영향을 줄 수 있습니다.",
+      "source_row_ids": [145],
+      "question_type": "misconception",
+      "difficulty": "easy"
+    }
+  }
+]

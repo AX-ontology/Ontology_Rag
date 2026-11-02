@@ -24,6 +24,12 @@ for q in qa:
 assert dict(Counter(q['question_type'] for q in qa)) == stats['question_categories']
 assert dict(Counter(str(len(q['evidence_ids'])) for q in qa)) == stats['evidence_rows_per_question']
 assert dict(Counter(e['source_file'] for e in corpus['evidence'].values())) == stats['source_rows']
-for name, expected in provenance['files_sha256'].items():
+upstream = [json.loads(line) for line in (root / 'upstream/final_450/qa_dataset.jsonl').read_text().splitlines() if line.strip()]
+by_id = {q['qa_id']: q for q in upstream}
+assert set(by_id) == set(qids)
+for q in qa:
+    for field in provenance['upstream_verification']['fields_compared']:
+        assert q.get(field) == by_id[q['qa_id']].get(field), (q['qa_id'], field)
+for name, expected in {**provenance['files_sha256'], **provenance['upstream_files_sha256']}.items():
     assert hashlib.sha256((root / name).read_bytes()).hexdigest() == expected, name
 print('PASS: 450 questions, 3995 source rows, dev150/test300, evidence links, statistics and hashes.')

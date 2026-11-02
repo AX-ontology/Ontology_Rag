@@ -1,0 +1,61 @@
+{
+  "dataset_name": "jaije_1_2_3_source_grounded_qa_450",
+  "version": "2026-09-30-v1",
+  "built_at": "2026-09-30T06:14:05.584570+00:00",
+  "build_method": "Validated concatenation, Jaije 1 then 2 then 3; no generation API calls",
+  "builder_sha256": "ae842424f12691dbe41d99f60950736782dc5ba3995f7f4bb03da0307d39ca9e",
+  "inputs": [
+    {
+      "source_file": "자이제_1.xlsx",
+      "sheet_name": "clean_sentences",
+      "text_column": "text_for_llm_human",
+      "questions": 150,
+      "id_first": "JAIJE1-QA-0001",
+      "id_last": "JAIJE1-QA-0150",
+      "csv": "qa_dataset.csv",
+      "csv_sha256": "5459a61e8d5630fd9eb2e623d86a7e78c620c8255ccfec77de46851d66670716",
+      "jsonl": "qa_dataset.jsonl",
+      "jsonl_sha256": "027c0a79aa767ed9163cf5b039b4e562ea604cfd4135097852904983dc4331fe"
+    },
+    {
+      "source_file": "자이제_2.xlsx",
+      "sheet_name": "종학 파트",
+      "text_column": "사람 검수",
+      "questions": 150,
+      "id_first": "JAIJE2-QA-0001",
+      "id_last": "JAIJE2-QA-0150",
+      "csv": "jaije2_3/outputs/jaije2_terra_v1/qa_dataset.csv",
+      "csv_sha256": "68496e370d8ca6ebbb6bb2d63b78dade11e060bab05990590b7a36129ecee4bc",
+      "jsonl": "jaije2_3/outputs/jaije2_terra_v1/qa_dataset.jsonl",
+      "jsonl_sha256": "a67d481394a75fe05f78463da81e96d4e68c521f353a1e73543d0eb9920e46b9"
+    },
+    {
+      "source_file": "자이제_3.xlsx",
+      "sheet_name": "clean_sentences",
+      "text_column": "사람 검수",
+      "questions": 150,
+      "id_first": "JAIJE3-QA-0001",
+      "id_last": "JAIJE3-QA-0150",
+      "csv": "jaije2_3/outputs/jaije3_terra_v1/qa_dataset.csv",
+      "csv_sha256": "9535172b06f9d98ee2b6e40367682404681718169c9e7cf25be1a79b300841eb",
+      "jsonl": "jaije2_3/outputs/jaije3_terra_v1/qa_dataset.jsonl",
+      "jsonl_sha256": "55a24d1c67f04e097826a96669a356bf776e9fa4e715a04c9d3406763a26e484"
+    }
+  ],
+  "questions": 450,
+  "synthetic_scenario_extension_questions": 0,
+  "original_ids_and_fields_preserved": true,
+  "original_generation_model": "gpt-5.6-terra",
+  "output_sha256": {
+    "qa_dataset.csv": "cb64f83e353050e5066622b9071cb1190d8c1fbbac68694edfba6becedc08533",
+    "qa_dataset.jsonl": "49e8c40bc2f746b394fe41734e6e0fc45de6bd6728fe9beb5401e5d6f2c4698c",
+    "validation_report.json": "a32a0a2a6ceff95340d9a6ab936fcce2be2f1ab57f93e43b0e6714e5c26de7f9",
+    "review_notes.json": "a7f5ecaa732b1295b00cc2e0cb878a929b538953709bb8a84cbe9316a2732fca"
+  },
+  "limitations": [
+    "Final integration version, not expert-approved Gold data.",
+    "All questions are source-derived; reference answers await human review.",
+    "Source 1 includes questions observed in previous retrieval experiments.",
+    "No independent train/dev/test split is established by this merge."
+  ]
+}
