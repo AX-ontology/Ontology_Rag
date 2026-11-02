@@ -1,0 +1,23 @@
+{
+  "source_kind": "local_experiment_export",
+  "requested_upstream": "https://github.com/ming9oori/AX-seoulfellow/tree/master/jaije_qa_dataset",
+  "upstream_status": "GitHub reports repository disabled; not fetched; equivalence unverified",
+  "source_files": {
+    "evaluation_inputs/qa.json": "be15e6e5acb4a14ebb2bf08cd346072dccaafe6fcd81ea5b1430841bee220bdd",
+    "evaluation_inputs/gold.json": "c631323fa679591fe43c529c53963b7d58855d999b225795400063d8c2009258",
+    "evaluation_inputs/split.json": "a4f34e3fa815742ae092d0b5c1e2b92a7978293dd9170948636edae8aa574a5e",
+    "inputs/corpus.json": "f188e1611b936db06a2c0c63f5dd6c82717fa302e35493ba0e223590c71e1971"
+  },
+  "transforms": [
+    "Remove generation_response_id",
+    "Set split from evaluation/split.json",
+    "Add evidence_ids from evaluation/gold.json"
+  ],
+  "files_sha256": {
+    "statistics.json": "ab39c804ab6df92314678ac119909e349a8943282cdad77a5fe4dcb49a5db528",
+    "corpus.json": "f188e1611b936db06a2c0c63f5dd6c82717fa302e35493ba0e223590c71e1971",
+    "qa.json": "9825e2cec8f0329153687c3d8b0e1e212456b139bfea985e7bf35a106f55e978",
+    "evaluation/gold.json": "c631323fa679591fe43c529c53963b7d58855d999b225795400063d8c2009258",
+    "evaluation/split.json": "a4f34e3fa815742ae092d0b5c1e2b92a7978293dd9170948636edae8aa574a5e"
+  }
+}

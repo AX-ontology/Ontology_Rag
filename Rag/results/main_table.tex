@@ -1,0 +1,36 @@
+% Requires booktabs, multirow, xcolor[table], ulem[normalem].
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{『자주 이기는 제안서』 기반으로 구축한 450문항 QA 데이터셋의 성능 비교(Qwen3.5-27B). 굵은 글씨와 밑줄은 각각 최고·차상위 점수이다.}
+\label{tab:jaije-main}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccccc}
+\toprule
+\multirow{2}{*}{\textbf{Type}} & \multirow{2}{*}{\textbf{Method}} & \textbf{Retrieval} & \multicolumn{3}{c}{\textbf{Answer Quality}} & \textbf{Latency} \\
+\cmidrule(lr){3-3}\cmidrule(lr){4-6}\cmidrule(lr){7-7}
+ & & \textbf{Recall@5} & \textbf{ROUGE-L} & \textbf{BLEU} & \textbf{BERTScore} & \textbf{(s/query)} \\
+\midrule
+\multirow{2}{*}{LLM-only} & LLM-only & - & 0.2567 & 8.26 & 0.8965 & 0.015365 \\
+ & LLM + self-check & - & 0.2616 & 8.37 & 0.8972 & 0.032970 \\
+\midrule
+LLM w/full doc & FullDoc & - & \uline{0.4142} & 16.02 & 0.9138 & 0.269186 \\
+\midrule
+\multirow{2}{*}{Text-only RAG} & Dense & 52.06 & 0.4004 & 18.34 & \uline{0.9146} & 0.029507 \\
+ & BM25 & \uline{52.96} & 0.4112 & \textbf{19.27} & 0.9122 & 0.028927 \\
+\midrule
+\multirow{3}{*}{KG-RAG} & LightRAG (shared KG) & 39.87 & 0.3452 & 12.94 & 0.8988 & 0.035733 \\
+ & 1-hop KG-RAG & 38.28 & 0.3562 & 13.78 & 0.9038 & 0.031406 \\
+ & FlatKG & 38.28 & 0.3562 & 13.78 & 0.9038 & 0.031407 \\
+\midrule
+\rowcolor[HTML]{EAF5E9}
+Task-based KG-RAG & Task-KG Context CE & \textbf{71.96} & \textbf{0.4307} & \uline{19.18} & \textbf{0.9167} & 0.034822 \\
+\bottomrule
+\end{tabular}
+\par\vspace{8pt}
+\begin{minipage}{\textwidth}
+\scriptsize
+모든 성능 지표는 높을수록 좋으며, ROUGE-L·BERTScore F1은 0–1, Recall@5·BLEU는 0–100 척도이고 빈칸은 미산출, -는 적용 불가를 뜻합니다.
+\end{minipage}
+\end{table*}

@@ -1,0 +1,13 @@
+{
+  "question_id": "JAIJE3-QA-0138",
+  "question": "Executive Summary는 누구를 위해 어떤 목적으로 작성하는 요약본인가요?",
+  "aspect_queries": [
+    "Executive Summary 누구를 위해",
+    "Executive Summary 어떤 목적으로"
+  ],
+  "stage": "candidate_construction_only",
+  "candidate_count": 40,
+  "original_question_top20_retained": true,
+  "candidates_outside_original_dense40": 19,
+  "not_a_scored_qa_result": true
+}

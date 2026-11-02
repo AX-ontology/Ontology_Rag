@@ -1,0 +1,44 @@
+{
+  "source": "User-provided timing values; not independently measured by this edit",
+  "input_unit": "ms",
+  "output_unit": "s",
+  "ours_mapping": "Task-KG Context CE (existing highlighted row); not TH-KGR",
+  "values": {
+    "LLM-only": {
+      "milliseconds": "15.365",
+      "seconds": "0.015365"
+    },
+    "LLM + self-check": {
+      "milliseconds": "32.970",
+      "seconds": "0.03297"
+    },
+    "BM25": {
+      "milliseconds": "28.927",
+      "seconds": "0.028927"
+    },
+    "Dense": {
+      "milliseconds": "29.507",
+      "seconds": "0.029507"
+    },
+    "FlatKG": {
+      "milliseconds": "31.407",
+      "seconds": "0.031407"
+    },
+    "1-hop KG-RAG": {
+      "milliseconds": "31.406",
+      "seconds": "0.031406"
+    },
+    "LightRAG (shared KG)": {
+      "milliseconds": "35.733",
+      "seconds": "0.035733"
+    },
+    "FullDoc": {
+      "milliseconds": "269.186",
+      "seconds": "0.269186"
+    },
+    "Task-KG Context CE": {
+      "milliseconds": "34.822",
+      "seconds": "0.034822"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "source_rows": {
+    "자이제_1.xlsx": 1366,
+    "자이제_2.xlsx": 1375,
+    "자이제_3.xlsx": 1254
+  },
+  "questions_per_document": {
+    "JAIJE1": 150,
+    "JAIJE2": 150,
+    "JAIJE3": 150
+  },
+  "question_categories": {
+    "definition": 69,
+    "comparison": 38,
+    "method": 98,
+    "reason": 97,
+    "misconception": 56,
+    "numeric": 20,
+    "fact": 21,
+    "procedure": 51
+  },
+  "evidence_rows_per_question": {
+    "1": 217,
+    "2": 176,
+    "3": 45,
+    "4": 12
+  },
+  "source_total": 3995,
+  "question_total": 450
+}
