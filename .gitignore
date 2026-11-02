@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.cache/
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.log
+# Documents and result snapshots may contain confidential content.
+data/
+final_outputs/
+taskframe_v4/outputs/
+layer_connect/outputs/
+cleaning/outputs*/
+verification_report.json
+package_manifest.json

@@ -1,0 +1,11 @@
+{
+  "standard_tasks": [
+    {
+      "id": "NCS-SAMPLE-001",
+      "scheme": "NCS",
+      "name": "제안요청서 분석",
+      "definition": "제안 참여와 제안서 작성을 위해 제안요청서의 요구사항을 분석한다.",
+      "parent": "제안 업무"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+version: 1
+
+# Main entry: run_all.bash -> run_catalog_pipeline.py.
+# Approved catalog is a versioned file, not all nodes currently in Neo4j.
+catalog_pipeline:
+  baseline_taskframes: ../taskframe_v4/outputs/zaije_1_v4_5_structured_refine/05_taskframes/taskframes.json
+  assignment_batch_size: 48
+  assignment_max_facts: 160
+
+paths:
+  taskframe_dir: ../taskframe_v4
+  layer_connect_dir: ../layer_connect
+  cleaning_dir: ../cleaning
+  pcf: ../data/ai-fellow-data/02_pcf/pcf_data.json
+  output_root: ../final_outputs
+  taskframe_env: ../config/taskframe.env
+  neo4j_env: ../config/neo4j.env
+
+documents:
+  jaije_1:
+    input_xlsx: ../data/process_data/자이제_1.xlsx
+    sheet: clean_sentences
+    document_id: JAIJE_1
+    document_title: 자이제 1
+    reuse_taskkg: ../taskframe_v4/outputs/zaije_1_v4_5_structured_refine
+    reuse_input_sha256: 9246a6da6c7635b3f34ee55df75112eb38a2984ea06828be943dc196de5926eb
+    catalog_role: seed
+  jaije_2:
+    input_xlsx: ../data/process_data/자이제_2.xlsx
+    sheet: clean_sentences
+    document_id: JAIJE_2
+    document_title: 자이제 2
+    reuse_taskkg: ../final_outputs/v4_5_final/jaije_2/taskkg
+    reuse_input_sha256: 60f30063955d807f649b24c86ce0222e1d63bde5f81677c3ce97dfeed2c3689a
+    approved_alignment: ../final_outputs/v4_5_final/jaije_2/flat_consolidated
+    approved_source_digest: 9d10160da0519611e11db7b85adf57fdc0a1905f3751fce4b08b5a69ee93be15
+  jaije_3:
+    input_xlsx: ../data/process_data/자이제_3.xlsx
+    sheet: clean_sentences
+    document_id: JAIJE_3
+    document_title: 자이제 3
+    reuse_taskkg: ../final_outputs/v4_5_final/jaije_3/taskkg
+    reuse_input_sha256: 000648ed0a4d11f399e1f3d4bbab27d9389f1f20b1de2f4e4536be7906d8b971
+    approved_alignment: ../final_outputs/v4_5_flat_final/jaije_3/flat_consolidated
+    approved_source_digest: 03f63c5dc5c33099f317ef891373b53bf2aaa207b0f0896fab054c159a454925
+
+taskframe:
+  backend: llm
+  limit: 0
+  extraction_batch_size: 4
+  llm2_max_mentions: 60
+  context_chunk_radius: 1
+  candidate_threshold: 0.28
+  candidate_top_k: 8
+  promotion_min_support: 3
+
+pcf:
+  base_config: ../layer_connect/config.yaml
+
+cleaning:
+  entity_aliases: ../cleaning/config/entity_aliases.json
+  relation_aliases: ../cleaning/config/relation_aliases.json
+  entity_min_support: 2
+  entity_max_name_length: 40
+  ontology_min_support: 3
+  ontology_min_sections: 2
+  # true로 바꾸면 needs_review PCF 후보까지 확정 관계로 승격한다.
+  # 명시적인 사람 검토 전에는 false를 유지한다.
+  accept_needs_review_pcf: false
+
+neo4j:
+  database: null
+  batch_size: 500

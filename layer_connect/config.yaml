@@ -1,0 +1,87 @@
+paths:
+  pcf: ../data/ai-fellow-data/02_pcf/pcf_data.json
+  taskframes: ../taskframe_v4/outputs/zaije_1_v4_5_structured_refine/05_taskframes/taskframes.json
+  task_mentions: ../taskframe_v4/outputs/zaije_1_v4_5_structured_refine/03_entity_prep/task_mentions.jsonl
+  canonical_facts: ../taskframe_v4/outputs/zaije_1_v4_5_structured_refine/07_canonicalization/canonical_facts.jsonl
+  output_dir: outputs
+
+packet_limits:
+  mentions: 30
+  core_facts: 30
+  supporting_facts: 15
+  context_facts: 5
+
+retrieval:
+  query_top_k: 20
+  candidate_pool_size: 100
+  output_top_k: 30
+  atomic_support_threshold: 0.32
+  atomic_relative_threshold: 0.78
+  char_weight: 0.55
+  word_weight: 0.45
+  semantic:
+    enabled: true
+    required: true
+    model: dragonkue/BGE-m3-ko
+    python: null # use the interpreter running this pipeline
+    device: cpu
+    batch_size: 8
+    offline: false
+    cache_embeddings: true
+    weight: 1.0
+  weights:
+    frame: 0.20
+    mention: 0.30
+    fact: 0.25
+    path: 0.15
+    top_atomic: 0.10
+
+reranker:
+  enabled: true
+  required: true
+  model: dragonkue/bge-reranker-v2-m3-ko
+  python: null # use the interpreter running this pipeline
+  device: cpu
+  batch_size: 4
+  max_length: 768
+  top_n: 60
+  weight: 0.35
+  specialized_domain_penalty: 0.25
+  offline: false
+  cache_scores: true
+
+document_context:
+  anchor_level: 2
+  frame_weight: 0.65
+  path_weight: 0.35
+  mean_weight: 0.85
+  coverage_weight: 0.15
+  external_reranker_margin: 0.15
+  external_min_core_facts: 2
+  external_min_coverage: 0.20
+
+aggregation:
+  min_mapping_score: 0.20
+  min_evidence_coverage: 0.10
+  auto_accept_score: 0.38
+  auto_accept_margin: 0.035
+  auto_accept_coverage: 0.30
+  atomic_alignment_score: 0.05
+  lca_min_level: 2
+  lca_min_branches: 2
+  lca_min_units_per_branch: 2
+  lca_dominant_branch_ratio: 0.65
+  lca_frame_anchor_min_ratio: 0.45
+  lca_frame_anchor_min_units: 3
+  small_frame_frame_weight: 0.40
+  small_frame_path_weight: 0.60
+  contextual_specialization_score_ratio: 0.80
+  contextual_specialization_reranker_margin: 0.005
+  contextual_specialization_min_coverage: 0.20
+  parent_promotion_min_mentions: 5
+  parent_promotion_max_score_drop: 0.08
+  parent_promotion_max_coverage_drop: 0.10
+  lca_max_score_drop: 0.10
+  secondary_score_ratio: 0.92
+  context_anchor_score: 0.28
+  context_anchor_section_score: 0.40

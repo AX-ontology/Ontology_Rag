@@ -1,0 +1,4 @@
+# clean_and_export.py uses only the Python standard library.
+# Install these only when the actual Neo4j load step is performed.
+neo4j>=5.20
+requests>=2.31

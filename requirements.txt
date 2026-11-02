@@ -1,0 +1,12 @@
+# Python 3.10+ recommended. Model weights are downloaded separately on first use.
+PyYAML>=6.0
+pandas>=2.0
+openpyxl>=3.1
+numpy>=1.23
+scikit-learn>=1.2
+sentence-transformers>=3.0
+# Needed only for optional Neo4j loading:
+neo4j>=5.20
+requests>=2.31
+# Test runner:
+pytest>=7.0

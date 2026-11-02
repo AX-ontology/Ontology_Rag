@@ -1,0 +1,41 @@
+[
+  {
+    "canonical": "RFP",
+    "aliases": [
+      "RFP",
+      "제안요청서",
+      "제안 요청서",
+      "Request for Proposal",
+      "제안 요청서(RFP)",
+      "제안요청서(RFP)"
+    ]
+  },
+  {
+    "canonical": "프레젠테이션",
+    "aliases": ["프레젠테이션", "PT", "Presentation"]
+  },
+  {
+    "canonical": "작업분류체계(WBS)",
+    "aliases": ["작업분류체계", "작업분류체계(WBS)", "WBS"]
+  },
+  {
+    "canonical": "영업 정보(Capture Plan)",
+    "aliases": [
+      "영업 정보",
+      "영업정보",
+      "Capture Plan",
+      "캡처플랜",
+      "영업 정보(Capture Plan)"
+    ]
+  },
+  {
+    "canonical": "핵심 차별화요소",
+    "aliases": [
+      "핵심 차별화요소",
+      "핵심 차별화 요소",
+      "핵심 차별화요소(Discriminator)",
+      "핵심 차별화 요소(Discriminator)",
+      "Discriminator"
+    ]
+  }
+]

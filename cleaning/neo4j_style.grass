@@ -1,0 +1,67 @@
+node {
+  diameter: 28px;
+  color: #94A3B8;
+  border-color: #64748B;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+}
+
+/* Layer 1 · PCF */
+node.Layer1 {
+  diameter: 42px;
+  color: #2563EB;
+  border-color: #1E40AF;
+  border-width: 3px;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+}
+
+/* Layer 2 · TaskFrame and its evidence/concept subgraph */
+node.Layer2 {
+  color: #F97316;
+  border-color: #C2410C;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+}
+
+node.TaskFrame {
+  diameter: 58px;
+  color: #F97316;
+  border-color: #9A3412;
+  border-width: 4px;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+}
+
+relationship {
+  color: #CBD5E1;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #64748B;
+  text-color-internal: #FFFFFF;
+  caption: '<type>';
+}
+
+relationship.MAPS_TO_PCF {
+  color: #7C3AED;
+  shaft-width: 4px;
+  font-size: 10px;
+  caption: '<type>';
+}
+
+relationship.ALSO_MAPS_TO_PCF {
+  color: #7C3AED;
+  shaft-width: 4px;
+  font-size: 10px;
+  caption: '<type>';
+}
+
+relationship.HAS_PCF_CONTEXT {
+  color: #7C3AED;
+  shaft-width: 4px;
+  font-size: 10px;
+  caption: '<type>';
+}

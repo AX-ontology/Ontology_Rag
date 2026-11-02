@@ -1,0 +1,5 @@
+PyYAML>=6.0
+scikit-learn>=1.2
+
+# 의미 임베딩은 필수입니다. config.yaml의 semantic.python 환경에 설치해야 합니다.
+sentence-transformers>=3.0
