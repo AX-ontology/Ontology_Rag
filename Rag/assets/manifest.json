@@ -1,0 +1,17 @@
+{
+  "description": "Graph inputs from original local run; compact snapshot retains only properties consumed by published code. No learned weights or embeddings included.",
+  "source_sha256": {
+    "graph/aligned_ontology.json": "442814df07d8fbdbde50017ebffeb8177241f96c57550f0d534689a0a2433e8c",
+    "inputs/ontology_snapshot.json": "7f9163d54c9ac18f253fb95156d019b6d9ae59244dd01da71c3141ed69bea8ef",
+    "inputs/pcf_snapshot.json": "6e19d63588a65bf7037851be8229960eb4a51fb3daa7590f1da6cd008426419c",
+    "fresh_path_embeddings/paths.json": "2539ddbeec3d2cbab5b86e2e4e6596fba9420b1552ef9725b2121015d23ffd84"
+  },
+  "files_sha256": {
+    "snapshot.json": "b8f3b2b32f8bdc3906ed3b824d3f0bd9caf1de60838831f1ec93e9fdd742b627",
+    "global_nodes.json": "edea548df0a335ffd7d720bc720de26ef888afb399d53e31e5e5ed001d3d114f",
+    "pcf.json": "a3835d177fedb444ff817e54e1fbeff152e9302f38c6d6b5a8dcc17a2bc49242",
+    "graph.json": "8ef977992d9656e6a5f151bbc50211c3b20e695f8b5f7f7ce284541541d06899",
+    "paths.json": "852e73a84d68f7e08e51dfe4476f6d1d4e4a3bf45e038c3712798afdedd8c213"
+  },
+  "global_nodes_source_sha256": "7102ee7c990a0dfd87a2ff90057b8db81a55d71311f0fe409be073b1928745f5"
+}

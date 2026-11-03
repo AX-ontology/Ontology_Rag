@@ -1,0 +1,35 @@
+{
+  "prompt": "질문에서 서로 독립된 정보 요구만 분리하세요. 질문에 없는 원인/사례/기준/한계 등을 절대로 추가하지 마세요. 같은 요구를 바꾸어 쓰는 것은 금지합니다. 단일 질문은 원문 그대로1개를 반환하세요. requirement_span은 질문에서 그대로 복사한 요구 기준의 연속 문자열입니다. 여러 개이면 각 span은 서로 겹치지 않아야 합니다. query는 대상을 포함한 독립 질문입니다. 예: 질문: 리스크 갭은 무엇인가요? 출력: {\"aspects\":[{\"requirement_span\":\"무엇인가요\",\"query\":\"리스크 갭은 무엇인가요?\"}]}. 예: 질문: 영업과 제안 중 어느 하나만 중요한가요? 출력: {\"aspects\":[{\"requirement_span\":\"어느 하나만 중요한가요\",\"query\":\"영업과 제안 중 어느 하나만 중요한가요?\"}]}. 예: 질문: 세일즈와 비즈니스 개발은 고객 대상과 제공 방식에서 어떻게 다른가요? 출력: {\"aspects\":[{\"requirement_span\":\"고객 대상\",\"query\":\"세일즈와 비즈니스 개발의 고객 대상은 어떻게 다른가요?\"},{\"requirement_span\":\"제공 방식\",\"query\":\"세일즈와 비즈니스 개발의 제공 방식은 어떻게 다른가요?\"}]}. 예: 질문: 본문은 어떤 방식으로 구성하고 어느 정도의 지면을 배정해야 하나요? 출력: {\"aspects\":[{\"requirement_span\":\"어떤 방식으로 구성\",\"query\":\"본문은 어떤 방식으로 구성하나요?\"},{\"requirement_span\":\"어느 정도의 지면\",\"query\":\"본문에 어느 정도의 지면을 배정하나요?\"}]}. JSON만 출력하세요.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "aspects": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "properties": {
+            "requirement_span": {
+              "type": "string"
+            },
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "requirement_span",
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "aspects"
+    ],
+    "additionalProperties": false
+  },
+  "source": "AX-seoulfellow/minjoo_PARS_KG_RAG/experiments/jaije123_ontology_soft_20261013/aspects.py",
+  "note": "Same prior question-only prompt/schema; all responses freshly generated, span validation retained."
+}

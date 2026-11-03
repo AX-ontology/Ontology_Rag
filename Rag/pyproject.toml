@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "task-kg-rag"
+version = "0.1.0"
+description = "Task-KG context reranking and Aspect-guided hierarchical retrieval"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+models = ["torch>=2", "transformers>=4.51,<6", "sentence-transformers>=4,<7", "sentencepiece>=0.2"]
+
+[project.scripts]
+task-kg-rag = "task_kg_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

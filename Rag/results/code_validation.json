@@ -1,0 +1,24 @@
+{
+  "hierarchy_questions": 12,
+  "hierarchy_candidate_sets_matched": 60,
+  "candidate_ids_and_order_exact": true,
+  "model_inference_executed": false,
+  "task_context_cases": 3,
+  "task_context_candidates_matched": 120,
+  "published_code_sha256": {
+    "src/task_kg_rag/spans.py": "abd8b9c823ba59ca4081f4b4f5bbe5ca09d5731467850684f5719e68658aff66",
+    "src/task_kg_rag/extraction.py": "b288a1adc45d72e9864e538ef3db7fb026523defdefc8e322ec2ac4b0378b3e5",
+    "src/task_kg_rag/__init__.py": "24fb468fae80dafa1f70acacbb6f0e9dc0df7b7bffd551fa50fe5ef2177c7b34",
+    "src/task_kg_rag/hierarchy.py": "e24f12c0c263cd200916cf5ea748babcaa97892a098438abea17ca6d4133702c",
+    "src/task_kg_rag/legacy_aspects.py": "4bcf2289cbe451dcd69d3a8aa83626809767682fa215965ca5c6aa37b4e58554",
+    "src/task_kg_rag/context_retrieval.py": "573b0cf6f2eae4c1b41637351b2111a1a624d4c71e89fd7ffa9a23d0360bdbdf",
+    "src/task_kg_rag/backends.py": "aa2a3e3da8628a832bbe5c280274dfbca3f16411d845fe7392a67aadd426750c",
+    "src/task_kg_rag/context.py": "048f04f9f958b7e1b61ef7ff2e620d87a5d6b010133a0c8794bfb9525c373bee",
+    "src/task_kg_rag/cli.py": "8de9093c7ac8b26008dd4b4af59bf7e8c2f7fdf2d6669d044f087b0bc5166786",
+    "src/task_kg_rag/requirements.py": "8bf5f8e49b0b005d768c46c491d48214ab97cddbe8a4caeec74b84f9a3275220"
+  },
+  "unit_tests_passed": 8,
+  "validation_scope": "CPU cached-input regression; no new model inference or complete QA experiment",
+  "historical_main_table_unchanged": true,
+  "cli_integration": "Both methods tested with deterministic model doubles; existing-output and changed-input rejection verified"
+}

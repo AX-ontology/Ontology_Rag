@@ -1,0 +1,37 @@
+{
+  "context.py": {
+    "source": "study_context.py",
+    "sha256": "048f04f9f958b7e1b61ef7ff2e620d87a5d6b010133a0c8794bfb9525c373bee",
+    "change": "unchanged"
+  },
+  "context_retrieval.py": {
+    "source": "study_online_context.py",
+    "sha256": "573b0cf6f2eae4c1b41637351b2111a1a624d4c71e89fd7ffa9a23d0360bdbdf",
+    "change": "unchanged"
+  },
+  "legacy_aspects.py": {
+    "source": "study_aspect_extraction.py",
+    "sha256": "4bcf2289cbe451dcd69d3a8aa83626809767682fa215965ca5c6aa37b4e58554",
+    "change": "unchanged"
+  },
+  "requirements.py": {
+    "source": "scope_context/requirements.py",
+    "sha256": "8bf5f8e49b0b005d768c46c491d48214ab97cddbe8a4caeec74b84f9a3275220",
+    "change": "unchanged"
+  },
+  "extraction.py": {
+    "source": "scope_context/extraction.py",
+    "sha256": "b288a1adc45d72e9864e538ef3db7fb026523defdefc8e322ec2ac4b0378b3e5",
+    "change": "unchanged"
+  },
+  "spans.py": {
+    "source": "scope_context/spans.py",
+    "sha256": "abd8b9c823ba59ca4081f4b4f5bbe5ca09d5731467850684f5719e68658aff66",
+    "change": "unchanged"
+  },
+  "hierarchy.py": {
+    "source": "aspect_hierarchy_local_global_pilot_v3.py",
+    "source_sha256": "40a3dd8fc36a404adc6c8f24a10ec65cfaf023396039df5d2edb12deb8ea9c52",
+    "change": "Extracted routing, source ranking and round-robin fusion into reusable class; validated against all 60 archived candidate lists"
+  }
+}
